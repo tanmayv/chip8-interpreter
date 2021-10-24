@@ -1,3 +1,8 @@
+// Memory map:
+//
+// 0x000-0x1FF - Chip 8 interpreter, which contains the fontset at: 0x050-0x0A0
+// 0x200-0xFFF - Program ROM and work RAM
+
 pub const FONT_BASE_ADDR: usize = 0x050;
 pub const ROM_BASE_ADDR: usize = 0x200;
 
@@ -71,5 +76,3 @@ impl MMU {
         self.ram.as_ptr()
     }
 }
-
-
