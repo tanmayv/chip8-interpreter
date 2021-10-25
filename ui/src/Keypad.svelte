@@ -46,7 +46,18 @@ $: keymap = !useQwerty ? [
             <button 
                 on:touchstart={() => cb('down',key)} on:touchend={() => cb('up', key)} 
                 on:mousedown={() => cb('down',key)} on:mouseup={() => cb('up', key)} 
-                class="hover:bg-accent hover:text-white border-accent border-4 border text-center py-2 uppercase">{label} [{key}]</button>
+                class="disable-select hover:bg-accent hover:text-white border-accent border-4 border text-center py-2 uppercase">{label} [{key}]</button>
         {/each}
     </div>
 </div>
+<style>
+.disable-select {
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+</style>

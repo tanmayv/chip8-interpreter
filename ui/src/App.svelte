@@ -105,7 +105,6 @@ window.addEventListener("keyup", ({key}) => keyup(key));
 	        height={emulator?.HEIGHT}></canvas>
 	    {#if !loadingRom}
             <div>
-	            <div>Debug controls</div>
 	            <div class="grid grid-cols-3 gap-4">
 	                <Button text="⟳" on:click={() => emulator?.reset()} isActive={false}></Button>
 	                <Button text={playPauseLabel} on:click={handlePlayPauseClick} isActive={false}></Button>
