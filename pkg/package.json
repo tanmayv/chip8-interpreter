@@ -1,0 +1,16 @@
+{
+  "name": "chipolata",
+  "collaborators": [
+    "William Durand <will+git@drnd.me>"
+  ],
+  "version": "1.0.0",
+  "files": [
+    "libchipolata_bg.wasm",
+    "libchipolata.js",
+    "libchipolata_bg.js",
+    "libchipolata.d.ts"
+  ],
+  "module": "libchipolata.js",
+  "types": "libchipolata.d.ts",
+  "sideEffects": false
+}
