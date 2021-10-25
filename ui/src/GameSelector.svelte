@@ -18,7 +18,7 @@ const library = [
     <div class={`scrollbar scrollbar-thin pb-4 scrollbar-thumb-${theme} w-full flex gap-1 overflow-x-auto cursor-move`}>
 
         {#each library as {value, label, image}}
-            <div class:selected={rom === value} class="w-48 relative border-1 p-2 border-accent flex-grow-0 flex-shrink-0" on:click={() => dispatch('change', {rom: value})}>
+            <div class:selected={rom === value} class="w-48 relative border p-2 border-accent flex-grow-0 flex-shrink-0" on:click={() => dispatch('change', {rom: value})}>
                 <img src={image} class="w-full" alt={label}/>
                 <div>{label}</div>
                 {#if rom === value}

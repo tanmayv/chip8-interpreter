@@ -92,7 +92,7 @@ window.addEventListener("keyup", ({key}) => keyup(key));
     <div>
 	    <h2 class="my-8 text-4xl text-center">Chip8 interpreter</h2>
 	    <p class="text-lg text-center">A WebAssembly CHIP-8 interpreter written in rust, with svelte frontend.</p>
-	    <p class="text-center text-sm">Made by <a href="https://www.vhv.rs/dpng/d/5-53359_linkedin-logo-png-transparent-png.png" class="cursor-pointer">@tanmayv</a></p>
+	    <p class="text-center text-sm">Made by <a href="https://www.linkedin.com/in/tanmay-vijayvargiya-b3354295/" class="cursor-pointer">@tanmayv</a></p>
     </div>
     <GameSelector rom={romName} theme={theme} on:change={async ({detail}) => await changeRom(detail.rom)}></GameSelector>
     <div class="lg:hidden"><GameDescription rom={romName}></GameDescription></div>
