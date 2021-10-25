@@ -121,10 +121,10 @@ window.addEventListener("keyup", ({key}) => keyup(key));
 	    {/if}
 	</div>
 
-    <GameSelector rom={romName} theme={theme} on:change={async ({detail}) => await changeRom(detail.rom)}></GameSelector>
-	<div class="flex flex-col">
+	<div class="flex flex-col gap-4">
 	    <Keypad useQwerty={opts.isQwerty} on:down={(e) => keydown(e.detail.key)} on:up={(e) => keyup(e.detail.key)}></Keypad>
 	    <Instructions class="w-full" pc={debugInfo?.pc} instructions={debugInfo?.ram && disassemble(debugInfo?.ram)}></Instructions>
+        <GameSelector rom={romName} theme={theme} on:change={async ({detail}) => await changeRom(detail.rom)}></GameSelector>
 	    <MemoryViewer theme={theme} ram={debugInfo?.ram}></MemoryViewer>
 	</div>
 </main>
