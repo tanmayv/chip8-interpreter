@@ -25,10 +25,8 @@ $: if (pc > 0 && scroller) {
 </main>
 
 <style>
-    .container {
-    max-height: 400px;
+.container {
+    max-height: 280px;
     overflow-y: hidden;
-}
-.selected {
 }
 </style>

@@ -45,7 +45,7 @@ onMount(() => {
 <style>
 
 .container {
-    max-height: 200px;
+    max-height: 280px;
     overflow-y: scroll;
     overflow-x: hidden;
 }

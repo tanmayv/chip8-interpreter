@@ -9,7 +9,7 @@ module.exports = {
             accent: '#77D970',
             accent0: '#F8485E',
             accent1: '#FF9300',
-            accent1: '#F7FD04',
+            accent2: '#F7FD04',
         },
         extend: {},
     },
