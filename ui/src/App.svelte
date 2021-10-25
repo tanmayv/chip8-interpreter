@@ -91,8 +91,8 @@ window.addEventListener("keyup", ({key}) => keyup(key));
 <main class={`container scrollbar-thumb-accent gap-2 m-auto bg-black flex flex-col text-${theme} font-bold`}>
     <div>
 	    <h2 class="my-8 text-4xl text-center">Chip8 interpreter</h2>
-	    <h1 class="my-8 text-lg text-center">A WebAssembly CHIP-8 interpreter written in rust, with svelte frontend.
-	    Select a game to continue.</h1>
+	    <p class="text-lg text-center">A WebAssembly CHIP-8 interpreter written in rust, with svelte frontend.</p>
+	    <p class="text-center text-sm">Made by <a href="https://www.vhv.rs/dpng/d/5-53359_linkedin-logo-png-transparent-png.png" class="cursor-pointer">@tanmayv</a></p>
     </div>
     <GameSelector rom={romName} theme={theme} on:change={async ({detail}) => await changeRom(detail.rom)}></GameSelector>
     <div class="lg:hidden"><GameDescription rom={romName}></GameDescription></div>
